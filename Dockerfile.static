@@ -14,7 +14,7 @@ COPY ./ /conteco/repo/
 ##### BEGIN modeco/Dockerfile/env-labels-footer #####
 ENV CONTECO_REALM="vcwebio" \
     CONTECO_ECOSYSTEM="modeco" \
-    CONTECO_TYPE="base" \
+    CONTECO_TYPE="package" \
     CONTECO_NAME="ingest" \
     CONTECO_TAG="v1.0.0" \
     CONTECO_BASE="image.wrapper" \
@@ -22,12 +22,12 @@ ENV CONTECO_REALM="vcwebio" \
 LABEL io.vcweb.schema-version="1.0" \
       io.vcweb.realm="vcwebio" \
       io.vcweb.ecosystem="modeco" \
-      io.vcweb.type="base" \
+      io.vcweb.type="package" \
       io.vcweb.name="ingest" \
       io.vcweb.tag="v1.0.0" \
       io.vcweb.base="image.wrapper" \
       io.vcweb.build="modeco" \
-      io.vcweb.label="base.ingest - ModEco" \
-      io.vcweb.description="The ingest module package template." \
-      io.vcweb.docker.cmd.help="docker run vcwebio/modeco.base.ingest --help"
+      io.vcweb.label="package.ingest - ModEco" \
+      io.vcweb.description="The ingest module package." \
+      io.vcweb.docker.cmd.help="docker run vcwebio/modeco.package.ingest --help"
 ##### END modeco/Dockerfile/env-labels-footer #####
